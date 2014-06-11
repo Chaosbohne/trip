@@ -1,0 +1,12 @@
+<template name="CountriesShow">
+  <div id ="CountriesShow">
+    <form id="countries-form" action="action">
+      <div class="row">
+        {{#each countries}}
+          {{> CountryShow}}
+        {{/each}}
+      </div>  
+      <input type="submit"  value="send" />
+    </form>
+  </div>  
+</template>
